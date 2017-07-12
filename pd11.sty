@@ -20,51 +20,51 @@
 \subsubsectionfont{\normalsize}
 
 \newcommand{\faculty}[1]{
-\newcommand{\myFaculty}{#1}
+	\newcommand{\myFaculty}{#1}
 }
 
-\newcommand{\reporttitle}[1] {
-\newcommand{\myTitle}{#1}
+\newcommand{\reporttitle}[1]{
+	\newcommand{\myTitle}{#1}
 }
 
-\newcommand{\fullname}[1] {
-\newcommand{\myName}{#1}
+\newcommand{\fullname}[1]{
+	\newcommand{\myName}{#1}
 }
 
-\newcommand{\term}[1] {
-\newcommand{\myTerm}{#1}
+\newcommand{\term}[1]{
+	\newcommand{\myTerm}{#1}
 }
 
-\newcommand{\program}[1] {
-\newcommand{\myProgram}{#1}
+\newcommand{\program}[1]{
+	\newcommand{\myProgram}{#1}
 }
 
-\newcommand{\studentid}[1] {
-\newcommand{\myIdNumber}{#1}
+\newcommand{\studentid}[1]{
+	\newcommand{\myIdNumber}{#1}
 }
 
-\newcommand{\address}[1] {
-\newcommand{\myAddress}{#1}
+\newcommand{\address}[1]{
+	\newcommand{\myAddress}{#1}
 }
 
-\newcommand{\companyname}[1] {
-\newcommand{\companyName}{#1}
+\newcommand{\companyname}[1]{
+	\newcommand{\companyName}{#1}
 }
 
 
-\newcommand{\companycity}[1] {
-\newcommand{\companyCity}{#1}
+\newcommand{\companycity}[1]{
+	\newcommand{\companyCity}{#1}
 }
 
-\newcommand{\supervisorname}[1] {
+\newcommand{\supervisorname}[1]{
 	\newcommand{\mySupervisor}{#1}
 }
 
-\newcommand{\reportdate}[1] {
+\newcommand{\reportdate}[1]{
 	\newcommand{\reportDate}{#1}
 }
 
-\newcommand{\lettersubject}[1] {
+\newcommand{\lettersubject}[1]{
 	\newcommand{\letterSubject}{#1}
 }
 
@@ -83,17 +83,13 @@
 \setlength{\cftsecnumwidth}{25pt}
 \setlength{\parskip}{1em}
 
-\newcommand{\waterlootitlepage}[4] {
-
-\titlecontents{section}
-[0pt]
-{}%
-{\contentsmargin{0pt}
-    \thecontentslabel\enspace%
+\newcommand{\waterlootitlepage}[4]{
+	\titlecontents{section}[0pt]{}%
+	{\contentsmargin{0pt}
+    	\thecontentslabel\enspace%
     }
     {\contentsmargin{0pt}}
-    {\titlerule*[.5pc]{.}\contentspage}
-    []
+    {\titlerule*[.5pc]{.}\contentspage}[]
 
     \begin{singlespace}
     \begin{titlepage}
@@ -112,11 +108,9 @@
     \end{center}
     \end{titlepage}
     \end{singlespace}
+}
 
-
-    }
-
-    \newcommand{\waterlooletterofsubmittal}[6] {
+\newcommand{\waterlooletterofsubmittal}[6]{
     \begin{waterlooletter}
     		\begin{tabular}{ll}
     			To: & #1 \\
@@ -125,17 +119,17 @@
     			Re: & #4 
     		\end{tabular}
     
-	\rule{\textwidth}{2pt}    
+		\rule{\textwidth}{2pt}    
     
-    #5
+    		#5
 
-    Sincerely, \\ \\
-    #6 \\
-    #2 \\
+    		Sincerely, \\ \\
+    		#6 \\
+    		#2 \\
     \end{waterlooletter}
-    }
+}
 
-    \newenvironment{waterlooletter}{
+\newenvironment{waterlooletter}{
     \begin{singlespace}}{
     \end{singlespace}
     \thispagestyle{empty}
