@@ -1,7 +1,9 @@
-pd2report
+pd11-math-report
 =========
 
-A PD2 report template that incorporates all formatting necessary for students in the course, so that they can focus on the actual content instead of worrying about less important details. To begin, simply compile `report.tex` following the instructions in the comments. 
+Forked off snario's [pd2report](https://github.com/snario), updated to fit the new workterm report guidelines.
+
+A PD11 math workterm report template that incorporates all formatting necessary for students in the course, so that they can focus on the actual content instead of worrying about less important details. To begin, simply compile `report.tex` following the instructions in the comments. 
 
 # How to Begin
 
