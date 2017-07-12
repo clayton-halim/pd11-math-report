@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{pd11}
+\usepackage{datetime}
 \usepackage{lipsum} % remove this
 
 % Your information
@@ -10,10 +11,11 @@
 \term{2A}
 \program{Computer Science}
 \studentid{20465555}
-\address{123 Apple Street}
-\city{Cambridge, Ontario}
-\postalcode{A1X B2Y}
-\pdtitle{PD2: Critical Reflection and Report Writing}
+\companyname{Company Name}
+\companycity{Waterloo, Ontario}
+\supervisorname{Supervisor Name}
+\reportdate{July 18, 2017}
+\lettersubject{Memorandum subject}
 
 % Title Page (ignore)
 %   Creates the title page based on your information above
@@ -22,29 +24,36 @@
   \waterlootitlepage
     {\myFaculty}
     {\myTitle}
-    {\myPD \\ \UwLocation}
-    {\myName \\ \myTerm \ \myProgram \\ ID \myIdNumber \\ \today}
+    {\companyName \\ 
+    	 \companyCity
+    	}
+    {\myName \\ 
+    	 \myTerm \ 
+    	 \myProgram \\ 
+    	 ID \myIdNumber \\ 
+    	 \reportDate
+    	}
 }
 
 % Letter of Submittal
 %   Write your letter of submittal below, the header, salutation,
 %   and signature (except the image) are done for you already
-\newcommand{\letterofsubmittal} {
-  \waterlooletterofsubmittal
-    {\myAddress}{\myCity}{\myPostalCode}{\myName}{\myIdNumber}
-    {
+\newcommand{\letterofsubmittal} 
+	{\waterlooletterofsubmittal
+  		{\mySupervisor}
+  		{\myName}
+  		{\reportDate}
+  		{\letterSubject}
+  		{\lipsum[1] % remove this line
 
-    \lipsum[1] % remove this line
+    			% Write your letter here
 
-    % Write your letter here
-
-    }
-    {
-    % Attach an image of your signature
-    % The first number is a scale factor
-    % (if you can't, just delete this and uncomment next line)
-     \scalebox{0.1}{\includegraphics{examplesignature.jpg}}
-    % \myName
+    		}
+    		{% Attach an image of your signature
+    		 % The first number is a scale factor
+	     % (if you can't, just delete this and uncomment next line)
+     	 \scalebox{0.1}				   {\includegraphics{examplesignature.jpg}}
+    		% \myName
     }
 }
 
